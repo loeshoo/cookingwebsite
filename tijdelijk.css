@@ -1,0 +1,31 @@
+table {
+    width: 100%; /* Make the table full width */
+    border-collapse: collapse; /* Collapse borders for a cleaner look */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Add border to table cells */
+    padding: 10px; /* Add padding inside cells */
+    text-align: center; /* Center the text in both headers and data cells */
+}
+
+th {
+    background-color: transparent; /* Light background for table headers */
+}
+
+tr:nth-child(even) {
+    background-color: #CFF; /* Light cyan for even rows */
+}
+
+tr:nth-child(odd) {
+    background-color: #FFF; /* White for odd rows */
+}
+tr.hide
+{
+    background-color: transparent;
+}
+
+td {
+    width: 33.33%; /* Each column takes up one-third of the table width */
+}
+

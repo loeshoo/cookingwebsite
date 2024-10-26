@@ -24,7 +24,7 @@
     margin: 0 15px;
   }
   
-  .pcmenu nav ul li a {
+  .pcmenu > nav > ul > li > a {
     text-decoration: none;
     color: #333;
   }
@@ -95,7 +95,7 @@
   
   .cta-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
     padding: 20px;
   }
@@ -162,6 +162,42 @@
   {
     display: none;
   }
+  .cookie-banner
+  {
+    background-color: #fff;
+    color: #333;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  .cookie-banner p
+  {
+    margin: 0;
+  }
+  .cookie-banner a
+  {
+    color: #f0f;
+    text-decoration: underline;
+  }
+  .close-button
+  {
+    background-color: #f99;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .close-button:hover
+  {
+    opacity: 0.8;
+  }
+
+
   
   @media only screen and (max-width: 600px)
   {

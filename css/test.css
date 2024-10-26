@@ -2,119 +2,134 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-  }
-  
-  header {
+}
+
+header {
     background-color: #f8f8f8;
     padding: 10px 0;
-  }
-  
-  .pcmenu nav ul {
+}
+
+/* Navigation */
+.pcmenu nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-  }
-  
-  .pcmenu nav ul li {
+}
+
+.pcmenu nav ul li {
     margin: 0 15px;
-  }
-  
-  .pcmenu > nav > ul > li > a {
+}
+
+.pcmenu > nav > ul > li > a {
     text-decoration: none;
     color: #333;
-  }
-  
-  .hero {
+}
+
+/* Hero Section */
+.hero {
     width: 100%;
     height: 400px; /* Fixed height */
     background-color: #e8e8e8;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .hero-image {
+}
+
+.hero-image {
     max-height: 100%;
     max-width: 100%;
-  }
-  
-  .intro {
+}
+
+/* Intro Section */
+.intro {
     text-align: center;
     padding: 20px;
-  }
-  
-  .recipes, .latest-articles {
+}
+
+/* Articles Sections: Adjust to Grid */
+.list-articles, .shopping-articles, .storing-articles {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  .recipes h2, .latest-articles h2 {
+    display: grid; /* Use grid */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+h2 {
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .recipes h2, p
-  {
-    text-align: center;
-    
-  }
-  
-  .recipe, .article {
+}
+
+.article {
     background-color: #f0f0f0;
     border-radius: 10px; /* Rounded corners */
     padding: 10px;
-    margin: 10px;
-    width: 30%; /* Keep a consistent width */
     text-align: center;
-    display: inline-block; 
-    min-height: 200px;
-  
-  }
-  
-  .recipe img, .article img {
+    min-height: 200px; /* Maintain a minimum height */
+}
+
+/* Article Images */
+.article img {
     width: 100px; /* Square images */
     height: 100px;
     border-radius: 50%; /* Rounded images */
-  }
-  
-  .recipe h3, .article h3 {
+}
+
+/* Article Titles */
+.article h3 {
     font-size: 1.2em; /* 1.2x the paragraph size */
     margin-top: 10px;
-  }
-  
-  .recipe p, .article p {
+}
+
+/* Article Paragraphs */
+.article p {
     margin-top: 5px;
-    
-  }
-  
-  
-  footer {
+}
+
+.writing-list
+{
+    margin: 1.2em 0;
+    text-align: center;
+}
+.shopping
+{
+    margin: 1.2em 0;
+    text-align: center;
+}
+.storing
+{
+    margin: 1.2em 0;
+    text-align: center;
+}
+
+
+/* Footer Styles */
+footer {
     background-color: #f8f8f8;
-    color:#333;
+    color: #333;
     text-align: center;
     padding: 1.25em 0;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .footer-logo
-  {
+}
+
+.footer-logo {
     max-width: 3em;
     max-height: 3em;
     width: auto;
     height: auto;
     flex: 0 0 25%;
-  }
+}
 
-  .footer-linkies-1, .footer-linkies-2
-  {
+.footer-linkies-1, .footer-linkies-2 {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -122,34 +137,25 @@
     flex-direction: column;
     gap: 0.5em;
     flex: 0 0 25%;
-  }
-  .footer-linkies-1, .footer-linkies-2
-  {
-    list-style: none;
-  }
+}
 
-  .footer-linkies a
-  {
+.footer-linkies a {
     color: #333;
     text-decoration: none;
     font-size: 0.9em;
-  }
-  .footer-linkies
-  {
-    text-decoration: underline;
-  }
-  .copy
-  {
+}
+
+.copy {
     margin: 0.625em 0;
     flex: 0 0 100%;
     text-align: center;
-  }
-  .vis-hidden
-  {
+}
+
+.vis-hidden {
     display: none;
-  }
-  .cookie-banner
-  {
+}
+
+.cookie-banner {
     background-color: #fff;
     color: #333;
     padding: 1em;
@@ -159,57 +165,45 @@
     left: 0;
     right: 0;
     z-index: 9999;
-  }
-  .cookie-banner p
-  {
+}
+
+.cookie-banner p {
     margin: 0;
-  }
-  .cookie-banner a
-  {
+}
+
+.cookie-banner a {
     color: #f0f;
     text-decoration: underline;
-  }
-  .close-button
-  {
+}
+
+.close-button {
     background-color: #f99;
     color: #333;
     border: none;
     padding: 5px 10px;
     margin-left: 15px;
     cursor: pointer;
-  }
-  .close-button:hover
-  {
+}
+
+.close-button:hover {
     opacity: 0.8;
-  }
+}
 
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .pcmenu {
+        display: none;
+    }
 
-  
-  @media only screen and (max-width: 600px)
-  {
-    .pcmenu
-    {
-      display:none;
-      
+    .article {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        min-height: 150px;
     }
-    .recipe
-    {
-      flex: 1 1 100%;
-      margin: 10px 0;
-      min-height: 150px;
+}
+
+@media only screen and (min-width: 601px) {
+    .mobilemenu {
+        display: none;
     }
-    .article
-    {
-      flex: 1 1 100%;
-      margin: 10px 0;
-    }
-  }
-  
-  @media only screen and (min-width: 601px)
-  {
-    .mobilemenu
-    {
-      display:none;
-      
-    }
-  }
+}
