@@ -36,13 +36,13 @@
 .menu
 {
     position: absolute;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: #F9F;
-    color: #FFF;
-    transition: left 0.5s ease;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    color: #333;
+    transition: top 0.5s ease;
     z-index: 1;
     
 
@@ -51,7 +51,7 @@
 {
     list-style-type: none;
     padding: 0;
-    margin: 20px;
+    margin: 0;
     width: 100%
 }
 .menu ul li
@@ -64,12 +64,13 @@
 }
 .menu ul li a
 {
-    color: #FFF;
+    color: #333;
     text-decoration: none;
     display: block;
     width: 100%;
+    text-align: center;
 }
 #menu-toggle:checked ~ .menu
 {
-    left: 0;
+    top: 0;
 }
