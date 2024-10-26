@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+  }
+  
+  .pcmenu nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .pcmenu nav ul li {
+    margin: 0 15px;
+  }
+  
+  .pcmenu nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .hero {
+    width: 100%;
+    height: 400px; /* Fixed height */
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image {
+    max-height: 100%;
+    max-width: 100%;
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .recipes, .latest-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .recipes h2, .latest-articles h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .recipes h2, p
+  {
+    text-align: center;
+    
+  }
+  
+  .recipe, .article {
+    background-color: #f0f0f0;
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    margin: 10px;
+    width: 30%; /* Keep a consistent width */
+    text-align: center;
+    display: inline-block; 
+    min-height: 200px;
+  
+  }
+  
+  .recipe img, .article img {
+    width: 100px; /* Square images */
+    height: 100px;
+    border-radius: 50%; /* Rounded images */
+  }
+  
+  .recipe h3, .article h3 {
+    font-size: 1.2em; /* 1.2x the paragraph size */
+    margin-top: 10px;
+  }
+  
+  .recipe p, .article p {
+    margin-top: 5px;
+    
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  footer {
+    background-color: #f8f8f8;
+    color:#333;
+    text-align: center;
+    padding: 1.25em 0;
+    
+  }
+  footer p
+  {
+    margin: 0.625em 0;
+  }
+  .footer-linkies
+  {
+    list-style: none;
+    justify-content: center;
+    gap: 1em;
+    padding: 0;
+  }
+  .footer-linkies a
+  {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  .footer-linkies
+  {
+    text-decoration: underline;
+  }
+  
+  
+  
+  @media only screen and (max-width: 600px)
+  {
+    .pcmenu
+    {
+      display:none;
+      
+    }
+    .recipe
+    {
+      flex: 1 1 100%;
+      margin: 10px 0;
+      min-height: 150px;
+    }
+    .article
+    {
+      flex: 1 1 100%;
+      margin: 10px 0;
+    }
+  }
+  
+  @media only screen and (min-width: 601px)
+  {
+    .mobilemenu
+    {
+      display:none;
+      
+    }
+  }
