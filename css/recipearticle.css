@@ -31,10 +31,14 @@
   .intro
   {
     text-align: center;
+    background-color: #476B37 ;
+    color: #F6F7F1;
+    padding: 4em;
   }
   .hero {
-    width: 100%;
+    width: 80%;
     height: 400px; /* Fixed height anders werd hij te groot */
+    margin: 0 auto;
     background-color: #e8e8e8;
     display: flex;
     justify-content: center;
@@ -43,42 +47,100 @@
   
   .hero-image {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 80%;
+    
+  }
+  .serving
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em;
+
+
+  }
+  .recipe-header
+  {
+    text-align: center;
+    padding: 1em;
+  }
+  .recipee
+  {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    line-height: 1.6;
+  }
+  .recipee > p
+  {
+    margin-bottom: 1em;
+  }
+
+
+  .cta-backrecipe {
+    display: grid;
+    place-items: center;
+    padding: 20px;
   }
   
+  .cta-backbutton {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
 
-  footer {
+  .actualfooter {
     background-color: #f8f8f8;
     color:#333;
     text-align: center;
-    padding: 1.25em 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 1.25em 0 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    height: 8em;
+
   }
   .footer-logo
   {
-    max-width: 3em;
-    max-height: 3em;
-    width: auto;
+    max-width: 100%;
     height: auto;
-    flex: 0 0 25%;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    height: 5em;
+    background-color: #f8f8f8;
   }
 
-  .footer-linkies-1, .footer-linkies-2
+  .footer-linkies-1
   {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 0.5em;
-    flex: 0 0 25%;
+    grid-column: 2;
+    height: 5em;
+    background-color: #f8f8f8;
   }
-  .footer-linkies-1, .footer-linkies-2
+
+  .footer-linkies-2
   {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-column: 3;
+    height: 5em;
+    background-color: #f8f8f8;
   }
 
   .footer-linkies a
@@ -91,15 +153,26 @@
   {
     text-decoration: underline;
   }
-  .copy
+  .test23
   {
-    margin: 0.625em 0;
-    flex: 0 0 100%;
+    background-color: #f8f8f8;
+    padding: 20px;
     text-align: center;
+    margin-bottom: 1em;
+  }
+  .test23 .copy
+  {
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
   }
   .vis-hidden
   {
     display: none;
+  }
+  .vis-hidden-p
+  {
+    visibility: hidden;
   }
   .cookie-banner
   {
@@ -112,6 +185,7 @@
     left: 0;
     right: 0;
     z-index: 9999;
+    height: 6em;
   }
   .cookie-banner p
   {
@@ -138,27 +212,16 @@
 
 
   
-  @media only screen and (max-width: 600px)
+  @media only screen and (max-width: 768px)
   {
     .pcmenu
     {
       display:none;
       
     }
-    .recipe
-    {
-      flex: 1 1 100%;
-      margin: 10px 0;
-      min-height: 150px;
-    }
-    .article
-    {
-      flex: 1 1 100%;
-      margin: 10px 0;
-    }
   }
   
-  @media only screen and (min-width: 601px)
+  @media only screen and (min-width: 769px)
   {
     .mobilemenu
     {
@@ -168,8 +231,9 @@
   }
 /*table style test*/
 table {
-    width: 100%; 
+    width: 80%; 
     border-collapse: collapse; 
+    margin: 0 auto;
 }
 
 th, td {

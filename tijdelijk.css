@@ -29,3 +29,138 @@ td {
     width: 33.33%; /* Each column takes up one-third of the table width */
 }
 
+/*DIT IS DE FOOTER VOOR ALLE PAGES*/
+.actualfooter {
+    background-color: #f8f8f8;
+    color:#333;
+    text-align: center;
+    padding: 1.25em 0 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    height: 8em;
+
+  }
+  .footer-logo
+  {
+    max-width: 100%;
+    height: auto;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    height: 5em;
+    background-color: #f8f8f8;
+  }
+
+  .footer-linkies-1
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-column: 2;
+    height: 5em;
+    background-color: #f8f8f8;
+  }
+
+  .footer-linkies-2
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-column: 3;
+    height: 5em;
+    background-color: #f8f8f8;
+  }
+
+  .footer-linkies a
+  {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  .footer-linkies
+  {
+    text-decoration: underline;
+  }
+  .test23
+  {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .test23 .copy
+  {
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .vis-hidden
+  {
+    display: none;
+  }
+  .vis-hidden-p
+  {
+    visibility: hidden;
+  }
+  .cookie-banner
+  {
+    background-color: #fff;
+    color: #333;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 6em;
+  }
+  .cookie-banner p
+  {
+    margin: 0;
+  }
+  .cookie-banner a
+  {
+    color: #f0f;
+    text-decoration: underline;
+  }
+  .close-button
+  {
+    background-color: #f99;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .close-button:hover
+  {
+    opacity: 0.8;
+  }
+
+
+  
+  @media only screen and (max-width: 768px)
+  {
+    .pcmenu
+    {
+      display:none;
+      
+    }
+  }
+  
+  @media only screen and (min-width: 769px)
+  {
+    .mobilemenu
+    {
+      display:none;
+      
+    }
+  }

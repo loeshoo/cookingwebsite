@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+}
+
+/* Navigation */
+.pcmenu nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pcmenu nav ul li {
+    margin: 0 15px;
+}
+
+.pcmenu > nav > ul > li > a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 400px; /* Fixed height */
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* Intro Section */
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Articles Section*/
+.list-articles, .shopping-articles, .storing-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5em;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px; 
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.article {
+    background-color: #f0f0f0;
+    border-radius: 10px; 
+    padding: 10px;
+    text-align: center;
+    min-height: 200px; 
+}
+
+/* Article Images */
+.article img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 25%; /* Rounded images */
+}
+
+/* Article Titles */
+.article h3 {
+    font-size: 1.2em; /* 1.2x the paragraph size */
+    margin-top: 10px;
+}
+
+/* Article Paragraphs */
+.article p {
+    margin-top: 5px;
+}
+/*Titles*/
+.writing-list
+{
+    margin: 1.2em 0;
+    text-align: center;
+}
+.shopping
+{
+    margin: 1.2em 0;
+    text-align: center;
+}
+.storing
+{
+    margin: 1.2em 0;
+    text-align: center;
+}
+
+
+/* Footer Styles */
+.actualfooter {
+    background-color: #f8f8f8;
+    color:#333;
+    text-align: center;
+    padding: 1.25em 0 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    height: 8em;
+
+  }
+  .footer-logo
+  {
+    max-width: 100%;
+    height: auto;
+    grid-column: 1;
+    align-self: center;
+    justify-self: center;
+    height: 5em;
+    background-color: #f8f8f8;
+  }
+
+  .footer-linkies-1
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-column: 2;
+    height: 5em;
+    background-color: #f8f8f8;
+  }
+
+  .footer-linkies-2
+  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5em;
+    grid-column: 3;
+    height: 5em;
+    background-color: #f8f8f8;
+  }
+
+  .footer-linkies a
+  {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  .footer-linkies
+  {
+    text-decoration: underline;
+  }
+  .test23
+  {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .test23 .copy
+  {
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .vis-hidden
+  {
+    display: none;
+  }
+  .vis-hidden-p
+  {
+    visibility: hidden;
+  }
+  .cookie-banner
+  {
+    background-color: #fff;
+    color: #333;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    height: 6em;
+  }
+  .cookie-banner p
+  {
+    margin: 0;
+  }
+  .cookie-banner a
+  {
+    color: #f0f;
+    text-decoration: underline;
+  }
+  .close-button
+  {
+    background-color: #f99;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .close-button:hover
+  {
+    opacity: 0.8;
+  }
+
+
+  
+  @media only screen and (max-width: 768px)
+  {
+    .pcmenu
+    {
+      display:none;
+      
+    }
+  }
+  
+  @media only screen and (min-width: 769px)
+  {
+    .mobilemenu
+    {
+      display:none;
+      
+    }
+  }
