@@ -1,1 +1,133 @@
-hewwo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width&comma; initial-scale=1.0">
+  <title>Cooking for Students</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/burger.css">
+</head>
+<body>
+  <header class="mobilemenu">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="hamburger">
+      <!--burburg-->
+      <span></span>
+      <span></span>
+      <span></span>
+      </label>
+    <nav class="menu">
+      <ul>
+        <li><a href="allrecipes.html">Recipes</a></li>
+        <li><a href="groceries.html">Groceries</a></li>
+        <li><a href="kitchenessentials.html">Essentials</a></li>
+        <li><a href="cookingtechniques.html">Techniques</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </nav>    
+  </header>
+  <header class="pcmenu">
+    <a href="index.html">
+        <img src="img/pengui.png" class="logo-image">
+    </a>
+    <nav>
+        
+      <ul>
+        <li><a href="allrecipes.html">Recipes</a></li>
+        <li><a href="groceries.html">Groceries</a></li>
+        <li><a href="kitchenessentials.html">Essentials</a></li>
+        <li><a href="cookingtechniques.html">Techniques</a></li>
+      </ul>
+      
+    </nav>
+    <a href="contact.html" class="contact-button">Contact us</a>
+  </header>
+  <main>
+    <section class="hero">
+      <h2 class="vis-hidden"> Hero section</h2>
+      <img src="img/pengui.png" alt="Hero image" class="hero-image">
+    </section>
+
+    <section class="intro">
+      <h1>Cooking techniques</h1>
+      <p>
+            Packed with tips and tricks to elevate your cooking, you'll find everything from sharpening your knife skills to exploring different cooking techniques and understanding food safety. 
+            There's always something new to learn, and thyme flies when you're having fun in the kitchen!
+        </p>
+    </section>
+    <section class="form-container">
+        <h2 class="vis-hidden"> Hero section</h2>
+        <form action="#" method="post" class="formie">
+            <fieldset>
+                <legend class="vis-hidden">Contact Form</legend>
+            
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name (optional)</label>
+                <input type="text" id="last-name" name="last-name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="question">What is your question?</label>
+                <select id="question" name="question" required>
+                    <option value="">Please choose an option</option>
+                    <option value="recipe">Question about recipe</option>
+                    <option value="groceries">Question about groceries</option>
+                    <option value="kitchen-essentials">Question about kitchen essentials</option>
+                    <option value="cooking-techniques">Question about cooking techniques</option>
+                    <option value="other">Question about something else</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </section>
+</main>
+<footer class="actualfooter">
+  <img src="img/pengui.png" alt="logo, currently a penguin as placeholder" class="footer-logo">
+
+  <ul class="footer-linkies-1">
+    <li>
+      <a href="index.html">Homepage</a>
+    </li>
+    <li>
+      <a href="allrecipes.html">All recipes</a>
+    </li>
+    <li>
+      <a href="groceries.html">Groceries</a>
+    </li>
+  </ul>
+
+
+  <ul class="footer-linkies-2">
+    <li>
+      <a href="kitchenessentials.html">Kitchen essentials</a>
+    </li>
+    <li>
+      <a href="cookingtechniques.html">Cooking techniques</a>
+    </li>
+    <li>
+      <a href="contact.html">Contact us</a>
+    </li>
+  </ul>
+</footer>
+<section class="test23">
+    <h2 class="vis-hidden"> CTA section</h2>
+      <p class="copy">&copy; 2024 Cooking for Students</p>
+      <p class="vis-hidden-p">&copy; 2024 Cooking for Students</p>
+      <p class="vis-hidden-p">&copy; 2024 Cooking for Students</p>
+      <p class="vis-hidden-p">&copy; 2024 Cooking for Students</p>
+  </section>
+
+<!--funky cookie banner hopelijk-->
+<footer class="cookie-banner">
+  <p> This website uses cookies to ensure you get the best experience (and we get the most data). <a href="#"> Learn more </a></p>
+ <button class="close-button">Got it!</button>
+</footer>
+</body>
+</html>
