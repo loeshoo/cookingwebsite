@@ -55,6 +55,7 @@ legend {
 label {
     display: block;
     margin-bottom: 0.5em;
+    color: #fff;
 }
 
 input[type="text"],

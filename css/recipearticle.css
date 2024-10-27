@@ -260,6 +260,16 @@
       
     }
   }
+  .border-things {
+    border-color: #4CAF50; 
+    border-style: double; 
+    border-width: 4px; 
+    padding: 10px; 
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
 /*table style test*/
 table {
     width: 80%; 
