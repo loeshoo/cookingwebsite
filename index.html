@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width&comma; initial-scale=1.0">
+  <meta name="description" content="A website for students interested in learning how to cook. The site also provides tips on grocery shopping and various other subjects.">
+  <meta name="keywords" content="cooking, groceries, tips, recipes, utensils">
+  <meta name="author" content="Loes Hoogmoed">
+  <!--Dit zorgt ervoor dat je pagina laadt op normale 1.0 schaal wanneer het voor het eerst gelaad wordt door je browser-->
+  <meta name=viewport content="width=device-width, initial-scale=1.0">
   <title>Cooking for Students</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/burger.css">
+  <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
   <header class="mobilemenu">
@@ -18,22 +23,29 @@
       </label>
     <nav class="menu">
       <ul>
-        <li><a href="allrecipes.html">Recipes1</a></li>
+        <li><a href="allrecipes.html">Recipes</a></li>
         <li><a href="groceries.html">Groceries</a></li>
         <li><a href="kitchenessentials.html">Essentials</a></li>
         <li><a href="cookingtechniques.html">Techniques</a></li>
+        <li><a href="contact.html">Contact us</a></li>
       </ul>
     </nav>    
   </header>
   <header class="pcmenu">
+    <a href="index.html">
+        <img src="img/pengui.png" class="logo-image">
+    </a>
     <nav>
+        
       <ul>
         <li><a href="allrecipes.html">Recipes</a></li>
         <li><a href="groceries.html">Groceries</a></li>
         <li><a href="kitchenessentials.html">Essentials</a></li>
         <li><a href="cookingtechniques.html">Techniques</a></li>
       </ul>
+      
     </nav>
+    <a href="contact.html" class="contact-button">Contact us</a>
   </header>
   <main>
     <section class="hero">
@@ -45,66 +57,79 @@
       <h1>Welcome to Cooking for Students</h1>
       <p>Welcome to Cooking for Students! This website is your comprehensive guide to cooking for students. Whether you’re looking for recipes to try&comma; finding out how to write an organized grocery list&comma; or looking to sharpen up your cookingtechniques&comma; we’re here for you!</p>
     </section>
-
-    <section class="recipes">
+    <section class="recipe-home">
       <h2>Recipes</h2>
-      <p>Here’s a selection of recipes</p>
-      <article class="recipe">
-        <img src="img/pengui.png" alt="Poke bowl">
-        <a href="recipe.html">
-          <h3>Poke Bowl</h3>
-        </a>
-        <p>Poke bowl is the perfect way to enjoy a fresh and flavorful mix of your favorite veggies.</p>
-      </article>
-      <article class="recipe">
-        <img src="img/pengui.png" alt="Pasta for beginners">
-        <h3>Pasta for Beginners</h3>
-        <p>Pasta is an easy dish with a lot of possibilities for variation. </p>
-      </article>
-      <article class="recipe">
-        <img src="img/pengui.png" alt="Tomato soup">
-        <h3>Tomato Soup</h3>
-        <p>For those colder days&comma; or when you feel like a nice&comma; hot bowl of delicious tomato soup</p>
-      </article>
-      <article class="recipe">
-        <img src="img/pengui.png" alt="How to cook rice">
-        <h3>How to cook rice</h3>
-        <p>Rice is a staple in a lot of meals&comma; so here's three ways to cook it!</p>
-      </article>
-      <article class="recipe">
-        <img src="img/pengui.png" alt="How to cook rice">
-        <h3>Three ways to make stamppot</h3>
-        <p>A classic Dutch dish, made with veggies and boiled potatoes.</p>
-      </article>
-      <article class="recipe">
-        <img src="img/pengui.png" alt="How to cook rice">
-        <h3>Instant noodles</h3>
-        <p>Here's three ways to add something extra to your noodles.
-      </article>
-    </section>
-    <section class="cta-recipes">
-
+      <p>Here's a selection of recipes</p>
     </section>
 
-    <section class="latest-articles">
-      <h2>Latest Articles</h2>
-      <p> Our latest recipes</p>
+    <section class="recipe-articles">
       <article class="article">
         <img src="img/pengui.png" alt="Grocery shopping on a budget">
-        <h3>Grocery Shopping on a Budget</h3>
-        <p>The best tips and tricks to get the most out of your money.</p>
+        <h3>Easy poke bowl with salmon</h3>
+        <p>Poke bowls are the perfect way to make use of your leftover veggies.  </p>
+        <a href="recipe.html">
+          <button class="arrow-button">&rarr;</button>
+        </a>
       </article>
       <article class="article">
         <img src="img/pengui.png" alt="Must-haves for beginners">
-        <h3>Must-Haves for Beginners</h3>
-        <p>Here’s the must-haves you’ll need to get started in the kitchen.</p>
+        <h3>Writing a comprehensive grocery list</h3>
+        <p>Create a detailed grocery list that covers all your cooking needs, ensuring you never forget an essential item again. </p>
       </article>
       <article class="article">
         <img src="img/pengui.png" alt="Handling leftovers">
-        <h3>Handling Leftovers</h3>
-        <p>Here’s how to store leftovers and make the most of your leftover veggies.</p>
+        <h3>The pros and cons of bulk shopping</h3>
+        <p>Explore the advantages and drawbacks of bulk shopping, from long-term savings to potential storage challenges.</p>
+      </article>
+      <article class="article">
+        <img src="img/pengui.png" alt="Grocery shopping on a budget">
+        <h3>Checking what ingredients you already have</h3>
+        <p>Save time and money by learning how to take stock of the ingredients you already have before planning your next grocery trip. </p>
+      </article>
+      <article class="article">
+        <img src="img/pengui.png" alt="Must-haves for beginners">
+        <h3>Writing a comprehensive grocery list</h3>
+        <p>Create a detailed grocery list that covers all your cooking needs, ensuring you never forget an essential item again. </p>
+      </article>
+      <article class="article">
+        <img src="img/pengui.png" alt="Handling leftovers">
+        <h3>The pros and cons of bulk shopping</h3>
+        <p>Explore the advantages and drawbacks of bulk shopping, from long-term savings to potential storage challenges.</p>
       </article>
     </section>
+    <section class="cta-recipes">
+      <h2 class="vis-hidden"> CTA section</h2>
+      <a href="allrecipes.html" class="cta-button">Go to all recipes</a>
+    </section>
+
+
+    <section class="latest-articles">
+        <h2>Latest articles</h2>
+        <p>Our latest articles </p>
+    </section>
+    
+    <section class="article-articles">
+        <article class="article">
+          <img src="img/pengui.png" alt="Grocery shopping on a budget">
+          <h3>How to navigate a grocery store</h3>
+          <p>Master the art of efficient grocery shopping with tips on how to navigate the store, save time, and avoid unnecessary purchases. </p>
+          <a href="article1.html">
+            <button class="arrow-button">&rarr;</button>
+          </a>
+        </article>
+        <article class="article">
+          <img src="img/pengui.png" alt="Must-haves for beginners">
+          <h3>Grocery shopping on a budget</h3>
+          <p>Learn practical strategies for sticking to a grocery budget while still getting nutritious and delicious food for your meals.</p>
+        </article>
+        <article class="article">
+          <img src="img/pengui.png" alt="Handling leftovers">
+          <h3>Strategies to avoid impulse buying</h3>
+          <p>Discover simple yet effective strategies to stay focused while grocery shopping and avoid impulse buys that make you spend more. </p>
+        </article>
+      </section>
+    
+
 
     <section class="cta-buttons">
       <h2 class="vis-hidden"> CTA section</h2>
