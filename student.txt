@@ -1,0 +1,5 @@
+Student name: Loes Hoogmoed
+Student number: 734300
+Student class: HAINF24VT1A
+GitHub Repository: https://github.com/loeshoo/loeshoo.github.io
+GitHub Pages URL: https://loeshoo.github.io/
